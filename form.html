@@ -1,37 +1,14 @@
 <html>
-    <head>Javascript Form Event</head>
-    <body>
-        <h2>Javascript form Events </h2>
-        <form onsubmit="return submistEvent()">
-            <label for="name">Name:</label><br>
-            
-        <input type="text" id="input1" onfocus="FocusEvent()"
-                                        onblur="blurEvent()"
-                                        onchange="changeEvent()"
-                                        onkeydown="keyDownEvent()"> <br><br>
+<head>
+    <title>HTML FORM</title>
+</head>
+<body>
+    <form method="get" action="cookies.php">
+        <label>Username</label>
+        <input type="text" name="username">
+        <label>Password</label>
+        <input type="text" name="password">
         <input type="submit" value="Submit">
     </form>
-        <script>
-            function focusEvent(){
-                document.getElementById("message").innerText="input field is focused";
-                document.getElementsById("name").style.background="aqua";
-            }
-            function blurEvent(){
-                document.getElementById("message").innerText="input field lost focus";
-                document.getElementsById("name").style.background="";
-            }
-            function changeEvent(){
-                document.getElementById("message").innerText="input your value ";
-               
-            }
-            function keyDownEvent(){
-                document.getElementById("message").innerText="key is being pressed";
-            
-            }
-            function submistEvent(){
-                alert("form submitted");
-                return false;
-            }
-        </script>
-    </body>
-</html>
+</body>
+</html>     

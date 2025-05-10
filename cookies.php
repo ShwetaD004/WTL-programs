@@ -1,19 +1,10 @@
-<?php
-$cookie_name = "user";
-$cookie_value = "John Doe";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+<?php     
+    $usern=$_GET['username'];
+    $userp=$_GET['password'];
+    setcookie("username", $usern, time() + 10, "/"); 
+    if(isset($_COOKIE['username'])) {
+        echo "Welcome back, " . $_COOKIE['username'] . "!";
+    } else {
+    echo "Hello, new visitor! Setting your cookie...";
+    }
 ?>
-<html>
-<body>
-
-<?php
-if(!isset($_COOKIE[$cookie_name])) {
-  echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-  echo "Cookie '" . $cookie_name . "' is set!<br>";
-  echo "Value is: " . $_COOKIE[$cookie_name];
-}
-?>
-
-</body>
-</html>
