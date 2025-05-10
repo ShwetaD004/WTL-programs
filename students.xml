@@ -1,0 +1,13 @@
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<students>
+    <student>
+    <name>Kirti</name>
+    <age>21</age>
+    <course>computer science</course>
+    </student>
+    <studet>
+        <name>Aishwarya</name>
+        <age>22</age>
+        <course>Bcs</course>
+    </studet>
+</students>

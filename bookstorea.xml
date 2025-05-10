@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<bookstore>
+    <book>
+        <title>The Great Gatsby</title>
+        <author>F.Scott Fitzgeral</author>
+        <price>15$</price>
+        <genre>Fiction</genre>
+    </book>
+    <book>
+        <title>1984</title>
+        <author>George Orwell</author>
+        <price>18$</price>
+        <genre>Dystopian</genre>
+    </book>
+    <book>
+        <title>To kill a mockingbird</title>
+        <author>Harer Lee</author>
+        <price>12$</price>
+        <genre>Classic</genre>
+    </book>
+</bookstore>
